@@ -1,0 +1,182 @@
+.container{
+  
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0px 20px;
+    border-radius: 12px;
+    /* background: #22272C; */
+    box-shadow: 0px 4px 16px rgba(254, 205, 211, 0.1), 0px 8px 24px rgba(254, 205, 211, 0.1), 0px 16px 56px rgba(254, 205, 211, 0.1);
+  }
+  
+  .container .topic{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: rgb(3 7 18);
+  }
+  
+  .content1 input{
+    display: none;
+  }
+  
+  .content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  
+  .content1 .list{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-right: 50px;
+  }
+  
+  .content1 .list label{
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(3 7 18);
+    padding-left: 25px;
+    transition: all 0.5s ease;
+    z-index: 10;
+  }
+
+  #home:checked ~ .list label.home,
+#blog:checked ~ .list label.blog,
+#help:checked ~ .list label.help,
+#code:checked ~ .list label.code,
+#about:checked ~ .list label.about,
+#artificial:checked ~ .list label.artificial,
+#mobile:checked ~ .list label.mobile,
+#programming:checked ~ .list label.programming,
+#bigData:checked ~ .list label.bigData,
+#noSqlDB:checked ~ .list label.noSqlDB,
+#wareHouse:checked ~ .list label.wareHouse,
+#analysis:checked ~ .list label.analysis
+{
+  color: #22272C;
+}
+
+.content .slider{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  
+  background: rgb(14 165 233);;
+}
+
+#home:checked ~ .list .slider{
+  top: 0;
+}
+
+#blog:checked ~ .list .slider{
+  top: 40px;
+}
+
+#help:checked ~ .list .slider{
+  top: 80px;
+}
+
+#code:checked ~ .list .slider{
+  top: 120px;
+}
+
+#about:checked ~ .list .slider{
+  top: 160px;
+}
+
+#artificial:checked ~ .list .slider{
+  top:200px;
+}
+#mobile:checked ~ .list .slider{
+  top:240px;
+}
+#programming:checked ~ .list .slider{
+  top:280px;
+}
+
+#bigData:checked ~ .list .slider{
+  top:320px;
+}
+#noSqlDB:checked ~ .list .slider{
+  top:360px;
+}
+
+#wareHouse:checked ~ .list .slider{
+  top:400px;
+}
+
+#analysis:checked ~ .list .slider{
+  top:440px;
+}
+
+
+.content1 .text-content{
+  width: 80%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.content1 .text{
+  display: none;
+}
+
+.content1 .text .title{
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.container .text p{
+  text-align: justify;
+}
+
+.content1 .text-content .home{
+  display: block;
+}
+
+
+
+#home:checked ~ .text-content .home,
+#blog:checked ~ .text-content .blog,
+#help:checked ~ .text-content .help,
+#code:checked ~ .text-content .code,
+#about:checked ~ .text-content .about,
+#artificial:checked ~ .text-content .artificial,
+#mobile:checked ~ .text-content .mobile,
+#programming:checked ~ .text-content .programming,
+#bigData:checked ~ .text-content .bigData,
+#noSqlDB:checked ~ .text-content .noSqlDB,
+#wareHouse:checked ~ .text-content .wareHouse,
+#analysis:checked ~ .text-content .analysis
+{
+  display: block;
+}
+
+#blog:checked ~ .text-content .home,
+#help:checked ~ .text-content .home,
+#code:checked ~ .text-content .home,
+#about:checked ~ .text-content .home,
+#artificial:checked ~ .text-content .home,
+#mobile:checked ~ .text-content .home,
+#programming:checked ~ .text-content .home,
+#bigData:checked ~ .text-content .home,
+#noSqlDB:checked ~ .text-content .home,
+#wareHouse:checked ~ .text-content .home,
+#analysis:checked ~ .text-content .home
+{
+  display: none;
+}
+
+.content1 .list label:hover{
+  color: rgb(14 165 233);;
+}
